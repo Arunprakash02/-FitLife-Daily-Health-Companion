@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FitLife</string>
+    <string name="water_disclaimer">This is a general wellness estimate (weight ÷ 20). Your real needs vary with activity, weather and health. Not medical advice.</string>
+    <string name="bmi_disclaimer">BMI is only a screening measure, not a complete health assessment.</string>
+</resources>

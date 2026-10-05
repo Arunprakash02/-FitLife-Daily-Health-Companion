@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💧 Water" />
+
+        <!-- PIC: drawable img_water -->
+        <ImageView
+            android:id="@+id/ivWater"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Water"
+            android:scaleType="centerCrop"
+            android:src="@drawable/water1" />
+
+        <TextView
+            android:id="@+id/tvWaterBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="0.0 / 3.0 L"
+            android:textColor="@color/blue_water"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressWaterBig"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progressBackgroundTint="@color/blue_light"
+            android:progressTint="@color/blue_water" />
+
+        <TextView
+            android:id="@+id/tvWaterInfo"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd250"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="+ 250 ml"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd500"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="+ 500 ml"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUndo"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Undo last drink" />
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="⏰ Reminder"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off" />
+
+            <RadioButton
+                android:id="@+id/rbEvery1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every 1 hour" />
+
+            <RadioButton
+                android:id="@+id/rbEvery2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every 2 hours" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSchedule"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/water_disclaimer" />
+    </LinearLayout>
+</ScrollView>
